@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class Pn_Debug | Wordpress Plugin Boilerplate Powered</title>
+	<title>Class Pn_ContextualHelp | Wordpress Plugin Boilerplate Powered</title>
 
 	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
 
@@ -91,7 +91,7 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li class="active"><a href="class-Pn_Debug.html">Pn_Debug</a></li>
+				<li class="active"><a href="class-Pn_ContextualHelp.html">Pn_ContextualHelp</a></li>
 			</ul>
 
 
@@ -129,11 +129,11 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class Pn_Debug</h1>
+	<h1>Class Pn_ContextualHelp</h1>
 
 
 	<div class="description">
-	<p>Provides interface for debugging variables with Debug Bar</p>
+	<p>This class contain aThe contextual help code.</p>
 	</div>
 
 
@@ -148,15 +148,17 @@
 		
 		
 		
-		<b>Package:</b> <a href="package-PN.html">PN</a>\<a href="package-PN.Ad.html">Ad</a>\<a href="package-PN.Ad.Admin.html">Admin</a><br>
+		<b>Package:</b> <a href="package-Pn.html">Pn</a>\<a href="package-Pn.Extras.html">Extras</a><br>
 
 				<b>Copyright:</b>
-				2014<br>
+				2016 Your Name or Company Name<br>
 				<b>License:</b>
 				<a href="GPL-2.0+">GPL-2.0+</a><br>
 				<b>Author:</b>
-				Benjamin J. Balter <a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#x62;&#x65;&#110;&#64;&#98;&#97;&#108;&#x74;&#x65;&#x72;&#x2e;c&#111;&#109;">&#x62;&#x65;&#110;&#64;&#98;&#97;&#108;&#x74;&#x65;&#x72;&#x2e;c&#111;&#109;</a> &amp; Mte90 <a href="&#109;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#x6d;t&#101;&#57;&#48;&#x6e;&#x65;&#x74;&#x40;g&#109;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#x6d;">&#x6d;t&#101;&#57;&#48;&#x6e;&#x65;&#x74;&#x40;g&#109;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#x6d;</a><br>
-			<b>Located at</b> <a href="source-class-Pn_Debug.html#3-79" title="Go to source code">admin/includes/debug.php</a>
+				Your Name <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#x65;&#109;&#x61;&#105;&#x6c;&#64;&#x65;&#120;&#97;&#x6d;&#112;&#x6c;&#101;&#x2e;&#99;&#111;&#x6d;">&#x65;&#109;&#x61;&#105;&#x6c;&#64;&#x65;&#120;&#97;&#x6d;&#112;&#x6c;&#101;&#x2e;&#99;&#111;&#x6d;</a><br>
+				<b>Link:</b>
+				<a href="http://example.com">http://example.com</a><br>
+			<b>Located at</b> <a href="source-class-Pn_ContextualHelp.html#3-85" title="Go to source code">admin/includes/PN_ContextualHelp.php</a>
 		<br>
 	</div>
 
@@ -176,14 +178,14 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Pn_Debug.html#23-32" title="Go to source code">__construct</a>( )</code>
+		<code><a href="source-class-Pn_ContextualHelp.html#14-31" title="Go to source code">__construct</a>( )</code>
 
 		<div class="description short">
-			<p>Check user cap and WP_DEBUG on init to see if class should continue loading</p>
+			<p>RInitialize the snippet</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Check user cap and WP_DEBUG on init to see if class should continue loading</p>
+			<p>RInitialize the snippet</p>
 
 
 
@@ -194,85 +196,123 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="log" id="_log">
+	<tr data-order="help_docs_dir" id="_help_docs_dir">
 
 		<td class="attributes"><code>
 			 public 
 
-			mixed
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_log">#</a>
-		<code><a href="source-class-Pn_Debug.html#34-64" title="Go to source code">log</a>( <span>mixed <var>$var</var></span>, <span>boolean <var>$die</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$function</var> = <span class="php-quote">'var_dump'</span> </span> )</code>
+		<a class="anchor" href="#_help_docs_dir">#</a>
+		<code><a href="source-class-Pn_ContextualHelp.html#33-44" title="Go to source code">help_docs_dir</a>( <span>string <var>$paths</var></span> )</code>
 
 		<div class="description short">
-			<p>Debugs a variable
-Only visible to admins if WP_DEBUG is on</p>
+			<p>Filter for change the folder of Contextual Help</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Debugs a variable
-Only visible to admins if WP_DEBUG is on</p>
+			<p>Filter for change the folder of Contextual Help</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$var</var></dt>
-					<dd>The var to debug.</dd>
-					<dt><var>$die</var></dt>
-					<dd>Whether to die after outputting.</dd>
-					<dt><var>$function</var></dt>
-					<dd>The function to call, usually either print_r or var_dump, but can be anything.</dd>
+					<dt><var>$paths</var></dt>
+					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					mixed
+					string<br>The path.
 				</div>
 
 
+				<h4>Since</h4>
+				<div class="list">
+						1.0.0<br>
+				</div>
 
 
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="init_panel" id="_init_panel">
+	<tr data-order="help_docs_url" id="_help_docs_url">
 
 		<td class="attributes"><code>
 			 public 
 
-			array
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_init_panel">#</a>
-		<code><a href="source-class-Pn_Debug.html#66-77" title="Go to source code">init_panel</a>( <span>array <var>$panels</var></span> )</code>
+		<a class="anchor" href="#_help_docs_url">#</a>
+		<code><a href="source-class-Pn_ContextualHelp.html#46-57" title="Go to source code">help_docs_url</a>( <span>string <var>$paths</var></span> )</code>
 
 		<div class="description short">
-			<p>Extend Debug_Bar_Panel</p>
+			<p>Filter for change the folder image of Contextual Help</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Extend Debug_Bar_Panel</p>
+			<p>Filter for change the folder image of Contextual Help</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$panels</var></dt>
-					<dd>The default panels.</dd>
+					<dt><var>$paths</var></dt>
+					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					array<br>passback The original panels.
+					string<br>the path
 				</div>
 
 
+				<h4>Since</h4>
+				<div class="list">
+						1.0.0<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="contextual_help" id="_contextual_help">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_contextual_help">#</a>
+		<code><a href="source-class-Pn_ContextualHelp.html#59-83" title="Go to source code">contextual_help</a>( )</code>
+
+		<div class="description short">
+			<p>Contextual Help, docs in /help-docs folter
+Documentation https://github.com/voceconnect/wp-contextual-help</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Contextual Help, docs in /help-docs folter
+Documentation https://github.com/voceconnect/wp-contextual-help</p>
+
+
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.0.0<br>
+				</div>
 
 
 		</div>
@@ -291,38 +331,6 @@ Only visible to admins if WP_DEBUG is on</p>
 
 
 
-	<table class="summary properties" id="properties">
-	<caption>Properties summary</caption>
-	<tr data-order="instance" id="$instance">
-		<td class="attributes"><code>
-			protected static 
-			object
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Pn_Debug.html#14-21" title="Go to source code"><var>$instance</var></a>
-
-			<div class="description short">
-				<p>Instance of this class.</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>Instance of this class.</p>
-
-					<h4>Since</h4>
-					<div class="list">
-							1.0.0<br>
-					</div>
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$instance" class="anchor">#</a>
-				<code><span class="php-keyword1">null</span></code>
-			</div>
-		</td>
-	</tr>
-	</table>
 
 
 
