@@ -43,11 +43,6 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
-					<a href="package-Pn.html">
-						Pn					</a>
-
-						</li>
-				<li>
 					<a href="package-PN.html">
 						PN<span></span>
 					</a>
@@ -64,13 +59,7 @@
 						Admin					</a>
 
 						</li>
-							</ul></li>
-				<li>
-					<a href="package-Pn.Extras.html">
-						Extras					</a>
-
-						</li>
-							</ul></li>
+							</ul></li></ul></li>
 				<li>
 					<a href="package-WordPress.html">
 						WordPress<span></span>
@@ -101,6 +90,7 @@
 				<li><a href="class-Plugin_Name_Admin.html">Plugin_Name_Admin</a></li>
 				<li><a href="class-Plugin_Requirement.html">Plugin_Requirement</a></li>
 				<li><a href="class-Plugin_Requirements.html">Plugin_Requirements</a></li>
+				<li><a href="class-Pn_ActDeact.html">Pn_ActDeact</a></li>
 				<li><a href="class-Pn_ContextualHelp.html">Pn_ContextualHelp</a></li>
 				<li><a href="class-Pn_Debug.html">Pn_Debug</a></li>
 				<li><a href="class-Pn_Debug_Panel.html">Pn_Debug_Panel</a></li>
@@ -168,9 +158,9 @@
 <pre class="code"><code><span id="1" class="l"><span class="xlang">&lt;?php</span>
 </span><span id="2" class="l">
 </span><span id="3" class="l"><span class="php-comment">/**
-</span></span><span id="4" class="l"><span class="php-comment"> * This class contain aThe contextual help code.
+</span></span><span id="4" class="l"><span class="php-comment"> * This class contain the contextual help code.
 </span></span><span id="5" class="l"><span class="php-comment"> *
-</span></span><span id="6" class="l"><span class="php-comment"> * @package   Pn_Extras
+</span></span><span id="6" class="l"><span class="php-comment"> * @package   Plugin_Name
 </span></span><span id="7" class="l"><span class="php-comment"> * @author    Your Name &lt;email@example.com&gt;
 </span></span><span id="8" class="l"><span class="php-comment"> * @license   GPL-2.0+
 </span></span><span id="9" class="l"><span class="php-comment"> * @link      http://example.com
@@ -179,7 +169,7 @@
 </span><span id="12" class="l"><span class="php-keyword1">class</span> Pn_ContextualHelp {
 </span><span id="13" class="l">
 </span><span id="14" class="l">    <span class="php-comment">/**
-</span></span><span id="15" class="l"><span class="php-comment">     * RInitialize the snippet
+</span></span><span id="15" class="l"><span class="php-comment">     * Initialize the Contextual Help
 </span></span><span id="16" class="l"><span class="php-comment">     */</span>
 </span><span id="17" class="l">    <span class="php-keyword1">function</span> __construct() {
 </span><span id="18" class="l">        <span class="php-var">$plugin</span> = Plugin_Name::get_instance();
@@ -206,7 +196,7 @@
 </span></span><span id="39" class="l"><span class="php-comment">     * @return string The path.
 </span></span><span id="40" class="l"><span class="php-comment">     */</span>
 </span><span id="41" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> help_docs_dir( <span class="php-var">$paths</span> ) {
-</span><span id="42" class="l">        <span class="php-var">$paths</span>[] = plugin_dir_path( __FILE__ ) . <span class="php-quote">'../../help-docs/'</span>;
+</span><span id="42" class="l">        <span class="php-var">$paths</span>[] = plugin_dir_path( __FILE__ ) . <span class="php-quote">'help-docs/'</span>;
 </span><span id="43" class="l">        <span class="php-keyword1">return</span> <span class="php-var">$paths</span>;
 </span><span id="44" class="l">    }
 </span><span id="45" class="l">
@@ -219,7 +209,7 @@
 </span></span><span id="52" class="l"><span class="php-comment">     * @return string the path
 </span></span><span id="53" class="l"><span class="php-comment">     */</span>
 </span><span id="54" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> help_docs_url( <span class="php-var">$paths</span> ) {
-</span><span id="55" class="l">        <span class="php-var">$paths</span>[] = plugin_dir_path( __FILE__ ) . <span class="php-quote">'../../help-docs/img'</span>;
+</span><span id="55" class="l">        <span class="php-var">$paths</span>[] = plugin_dir_path( __FILE__ ) . <span class="php-quote">'help-docs/img'</span>;
 </span><span id="56" class="l">        <span class="php-keyword1">return</span> <span class="php-var">$paths</span>;
 </span><span id="57" class="l">    }
 </span><span id="58" class="l">
@@ -259,6 +249,6 @@
 </div>
 </div>
 <script src="resources/combined.js?c278d23089cf77171e2115b4bf8daa8aad94a501"></script>
-<script src="elementlist.js?78754cbd4b53a0d9475bf16027fb80f82d89ccb0"></script>
+<script src="elementlist.js?2635d46f7ad744523a87ff19447718d636fc1463"></script>
 </body>
 </html>
