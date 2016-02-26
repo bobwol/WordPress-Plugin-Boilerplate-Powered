@@ -307,7 +307,7 @@
 </span><span id="150" class="l">            <span class="php-var">$response</span> = wp_remote_get( <span class="php-quote">&quot;http://www.siteapi.org/api/v1/projects?page=1&quot;</span> );
 </span><span id="151" class="l">            <span class="php-keyword1">if</span> ( is_wp_error( <span class="php-var">$response</span> ) ) {
 </span><span id="152" class="l">                <span class="php-comment">// In case API is down we return the last successful count</span>
-</span><span id="153" class="l">                <span class="php-keyword1">return</span> get_option( <span class="php-var">$key</span> );
+</span><span id="153" class="l">                <span class="php-keyword1">return</span>;
 </span><span id="154" class="l">            } <span class="php-keyword1">else</span> {
 </span><span id="155" class="l">                <span class="php-comment">// If everything's okay, parse the body and json_decode it</span>
 </span><span id="156" class="l">                <span class="php-var">$json_output</span> = <span class="php-keyword2">json_decode</span>( wp_remote_retrieve_body( <span class="php-var">$response</span> ) );
