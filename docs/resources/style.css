@@ -617,5 +617,5 @@ span.l a.l:hover, span.l a.l:active, span.l a.l:focus {
 .right, .summary td.right {
 	text-align: right;
 }
-#menu > span:first-child, #menu > a:first-child span {background: url('https://raw.githubusercontent.com/Mte90/WordPress-Plugin-Boilerplate-Powered/master/plugin-name/assets/icon-256x256.png');content: '';height: 256px;width: 240px;display:block;margin: 0 auto;}
+#menu > span:first-child, #menu > a:first-child span {background: url('https://raw.githubusercontent.com/WPBP/WordPress-Plugin-Boilerplate-Powered/master/plugin-name/assets/icon-256x256.png');content: '';height: 256px;width: 240px;display:block;margin: 0 auto;}
 #menu > span:first-child, #menu > a:first-child, #menu > a:first-child:hover {background-color:transparent;color: transparent;}
