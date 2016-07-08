@@ -38,8 +38,4 @@ intermediate
 .idea
 cache
 
-plugin-name
-deploy.sh
-README.md
-.gitmodules
-ChangeLog.md
+/plugin-name/
