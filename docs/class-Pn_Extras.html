@@ -31,16 +31,10 @@
 						<ul>
 				<li>
 					<a href="package-Plugin.Name.html">
-						Name<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-Plugin.Name.Admin.html">
-						Admin					</a>
+						Name					</a>
 
 						</li>
-							</ul></li></ul></li>
+							</ul></li>
 			</ul>
 		</div>
 
@@ -51,6 +45,7 @@
 			<h3>Classes</h3>
 			<ul>
 				<li><a href="class-Plugin_Name.html">Plugin_Name</a></li>
+				<li><a href="class-Plugin_Name_Admin.html">Plugin_Name_Admin</a></li>
 				<li><a href="class-Pn_ActDeact.html">Pn_ActDeact</a></li>
 				<li><a href="class-Pn_CMB.html">Pn_CMB</a></li>
 				<li><a href="class-Pn_ContextualHelp.html">Pn_ContextualHelp</a></li>
@@ -123,14 +118,14 @@
 		<b>Package:</b> <a href="package-Plugin.html">Plugin</a>\<a href="package-Plugin.Name.html">Name</a><br>
 
 				<b>Copyright:</b>
-				2016 Your Name or Company Name<br>
+				{{author_copyright}}<br>
 				<b>License:</b>
-				<a href="GPL-2.0+">GPL-2.0+</a><br>
+				<a href="{{author_license}}">{{author_license}}</a><br>
 				<b>Author:</b>
-				Your Name <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#x65;&#109;&#x61;&#105;&#x6c;&#64;&#x65;&#120;&#97;&#x6d;&#112;&#x6c;&#101;&#x2e;&#99;&#111;&#x6d;">&#x65;&#109;&#x61;&#105;&#x6c;&#64;&#x65;&#120;&#97;&#x6d;&#112;&#x6c;&#101;&#x2e;&#99;&#111;&#x6d;</a><br>
+				{{author_name}} &lt;{{author_email}}><br>
 				<b>Link:</b>
-				<a href="http://example.com">http://example.com</a><br>
-			<b>Located at</b> <a href="source-class-Pn_Extras.html#3-200" title="Go to source code">admin/includes/PN_Extras.php</a>
+				{{author_url}}<br>
+			<b>Located at</b> <a href="source-class-Pn_Extras.html#3-216" title="Go to source code">admin/includes/PN_Extras.php</a>
 		<br>
 	</div>
 
@@ -150,7 +145,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Pn_Extras.html#14-27" title="Go to source code">__construct</a>( )</code>
+		<code><a href="source-class-Pn_Extras.html#14-33" title="Go to source code">__construct</a>( )</code>
 
 		<div class="description short">
 			<p>Initialize the snippet</p>
@@ -180,7 +175,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_cpt_glance_dashboard_support">#</a>
-		<code><a href="source-class-Pn_Extras.html#29-59" title="Go to source code">cpt_glance_dashboard_support</a>( <span>array <var>$items</var> = <span class="php-keyword1">array</span>() </span> )</code>
+		<code><a href="source-class-Pn_Extras.html#36-66" title="Go to source code">cpt_glance_dashboard_support</a>( <span>array <var>$items</var> = <span class="php-keyword1">array</span>() </span> )</code>
 
 		<div class="description short">
 			<p>Add the counter of your CPTs in At Glance widget in the dashboard<br>
@@ -227,7 +222,7 @@ NOTE: add in $post_types your cpts, remember to edit the css style (admin/assets
 
 		<td class="name"><div>
 		<a class="anchor" href="#_cpt_activity_dashboard_support">#</a>
-		<code><a href="source-class-Pn_Extras.html#61-76" title="Go to source code">cpt_activity_dashboard_support</a>( <span>array <var>$query_args</var></span> )</code>
+		<code><a href="source-class-Pn_Extras.html#70-85" title="Go to source code">cpt_activity_dashboard_support</a>( <span>array <var>$query_args</var></span> )</code>
 
 		<div class="description short">
 			<p>Add the recents post type in the activity widget<br>
@@ -272,7 +267,7 @@ NOTE: add in $post_types your cpts</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_pending_cpt_bubble">#</a>
-		<code><a href="source-class-Pn_Extras.html#78-116" title="Go to source code">pending_cpt_bubble</a>( )</code>
+		<code><a href="source-class-Pn_Extras.html#89-127" title="Go to source code">pending_cpt_bubble</a>( )</code>
 
 		<div class="description short">
 			<p>Bubble Notification for pending cpt<br>
@@ -310,7 +305,7 @@ NOTE: add in $post_types your cpts<br></p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_transient_caching_example">#</a>
-		<code><a href="source-class-Pn_Extras.html#139-173" title="Go to source code">transient_caching_example</a>( )</code>
+		<code><a href="source-class-Pn_Extras.html#152-186" title="Go to source code">transient_caching_example</a>( )</code>
 
 		<div class="description short">
 			<p>This method contain an example of code for caching a transient with an external request and parse the results.</p>
@@ -340,7 +335,7 @@ NOTE: add in $post_types your cpts<br></p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_web_push_notification">#</a>
-		<code><a href="source-class-Pn_Extras.html#175-198" title="Go to source code">web_push_notification</a>( <span>string <var>$title</var></span>, <span>string <var>$content</var></span>, <span>string <var>$url</var></span>, <span>string <var>$icon</var> = <span class="php-quote">''</span> </span> )</code>
+		<code><a href="source-class-Pn_Extras.html#190-213" title="Go to source code">web_push_notification</a>( <span>string <var>$title</var></span>, <span>string <var>$content</var></span>, <span>string <var>$url</var></span>, <span>string <var>$icon</var> = <span class="php-quote">''</span> </span> )</code>
 
 		<div class="description short">
 			<p>Send a Push notification on the users browser using the Web Push plugin for WordPress</p>
