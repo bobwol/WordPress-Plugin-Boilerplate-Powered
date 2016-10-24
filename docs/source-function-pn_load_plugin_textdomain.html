@@ -114,7 +114,7 @@
 </span></span><span id="13" class="l"><span class="php-comment"> * @link      {{author_url}}
 </span></span><span id="14" class="l"><span class="php-comment"> * @copyright {{author_copyright}}
 </span></span><span id="15" class="l"><span class="php-comment"> *
-</span></span><span id="16" class="l"><span class="php-comment"> * Plugin Name:       Plugin_Name
+</span></span><span id="16" class="l"><span class="php-comment"> * Plugin Name:       {{plugin_name}}
 </span></span><span id="17" class="l"><span class="php-comment"> * Plugin URI:        @TODO
 </span></span><span id="18" class="l"><span class="php-comment"> * Description:       @TODO
 </span></span><span id="19" class="l"><span class="php-comment"> * Version:           {{plugin_version}}
@@ -188,7 +188,7 @@
 </span><span id="87" class="l"><span class="php-comment">//WPBPGen{{#unless libraries_wpbp__fakepage}}</span>
 </span><span id="88" class="l"><span class="php-keyword1">require_once</span>( plugin_dir_path( __FILE__ ) . <span class="php-quote">'includes/PN_FakePage.php'</span> );
 </span><span id="89" class="l"><span class="php-comment">//{{/unless}}</span>
-</span><span id="90" class="l"><span class="php-comment">//WPBPGen{{#unless admin-page}}</span>
+</span><span id="90" class="l"><span class="php-comment">//WPBPGen{{#if admin-page}}</span>
 </span><span id="91" class="l"><span class="php-comment">/*
 </span></span><span id="92" class="l"><span class="php-comment"> * If you want to include Ajax within the dashboard, change the following
 </span></span><span id="93" class="l"><span class="php-comment"> * conditional to:
@@ -203,7 +203,7 @@
 </span><span id="102" class="l"><span class="php-keyword1">if</span> ( is_admin() &amp;&amp; (!<span class="php-keyword2">defined</span>( <span class="php-quote">'DOING_AJAX'</span> ) || !DOING_AJAX ) ) {
 </span><span id="103" class="l">  <span class="php-keyword1">require_once</span>( plugin_dir_path( __FILE__ ) . <span class="php-quote">'admin/Plugin_Name_Admin.php'</span> );
 </span><span id="104" class="l">}
-</span><span id="105" class="l"><span class="php-comment">//{{/unless}}</span>
+</span><span id="105" class="l"><span class="php-comment">//{{/if}}</span>
 </span><span id="106" class="l"></span></code></pre>
 
 	<div id="footer">

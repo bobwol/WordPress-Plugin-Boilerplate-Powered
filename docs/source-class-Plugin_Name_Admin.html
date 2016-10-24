@@ -152,7 +152,7 @@
 </span><span id="51" class="l">    <span class="php-comment">//WPBPGen{{#unless libraries_webdevstudios__cpt-core}}</span>
 </span><span id="52" class="l">    <span class="php-var">$this</span>-&gt;cpts = <span class="php-var">$plugin</span>-&gt;get_cpts();
 </span><span id="53" class="l">    <span class="php-comment">//{{/unless}}</span>
-</span><span id="54" class="l">    <span class="php-comment">//WPBPGen{{#unless admin-page}}</span>
+</span><span id="54" class="l">    <span class="php-comment">//WPBPGen{{#if admin-page}}</span>
 </span><span id="55" class="l">    <span class="php-comment">// Load admin style sheet and JavaScript.</span>
 </span><span id="56" class="l">    add_action( <span class="php-quote">'admin_enqueue_scripts'</span>, <span class="php-keyword1">array</span>( <span class="php-var">$this</span>, <span class="php-quote">'enqueue_admin_styles'</span> ) );
 </span><span id="57" class="l">    add_action( <span class="php-quote">'admin_enqueue_scripts'</span>, <span class="php-keyword1">array</span>( <span class="php-var">$this</span>, <span class="php-quote">'enqueue_admin_scripts'</span> ) );
@@ -166,7 +166,7 @@
 </span><span id="65" class="l">    <span class="php-comment">// Add an action link pointing to the options page.</span>
 </span><span id="66" class="l">    <span class="php-var">$plugin_basename</span> = plugin_basename( plugin_dir_path( <span class="php-keyword2">realpath</span>( <span class="php-keyword2">dirname</span>( __FILE__ ) ) ) . PN_TEXTDOMAIN . <span class="php-quote">'.php'</span> );
 </span><span id="67" class="l">    add_filter( <span class="php-quote">'plugin_action_links_'</span> . <span class="php-var">$plugin_basename</span>, <span class="php-keyword1">array</span>( <span class="php-var">$this</span>, <span class="php-quote">'add_action_links'</span> ) );
-</span><span id="68" class="l">    <span class="php-comment">//{{/unless}}</span>
+</span><span id="68" class="l">    <span class="php-comment">//{{/if}}</span>
 </span><span id="69" class="l">    <span class="php-comment">//WPBPGen{{#unless libraries_webdevstudios__cmb2}}</span>
 </span><span id="70" class="l">    <span class="php-comment">/*
 </span></span><span id="71" class="l"><span class="php-comment">     * Load CMB
@@ -306,7 +306,7 @@
 </span><span id="205" class="l">    <span class="php-keyword1">return</span> self::<span class="php-var">$instance</span>;
 </span><span id="206" class="l">  }
 </span><span id="207" class="l">
-</span><span id="208" class="l">  <span class="php-comment">//WPBPGen{{#unless admin-page}}</span>
+</span><span id="208" class="l">  <span class="php-comment">//WPBPGen{{#if admin-page}}</span>
 </span><span id="209" class="l">  <span class="php-comment">/**
 </span></span><span id="210" class="l"><span class="php-comment">   * Register and enqueue admin-specific style sheet.
 </span></span><span id="211" class="l"><span class="php-comment">   *
@@ -381,8 +381,8 @@
 </span><span id="280" class="l">    <span class="php-keyword1">include_once</span>( <span class="php-quote">'views/admin.php'</span> );
 </span><span id="281" class="l">  }
 </span><span id="282" class="l">
-</span><span id="283" class="l">  <span class="php-comment">//{{/unless}}</span>
-</span><span id="284" class="l">  <span class="php-comment">//WPBPGen{{#unless admin-page}}</span>
+</span><span id="283" class="l">  <span class="php-comment">//{{/if}}</span>
+</span><span id="284" class="l">  <span class="php-comment">//WPBPGen{{#if admin-page}}</span>
 </span><span id="285" class="l">  <span class="php-comment">/**
 </span></span><span id="286" class="l"><span class="php-comment">   * Add settings action link to the plugins page.
 </span></span><span id="287" class="l"><span class="php-comment">   *
@@ -401,7 +401,7 @@
 </span><span id="300" class="l">    );
 </span><span id="301" class="l">  }
 </span><span id="302" class="l">
-</span><span id="303" class="l">  <span class="php-comment">//{{/unless}}</span>
+</span><span id="303" class="l">  <span class="php-comment">//{{/if}}</span>
 </span><span id="304" class="l">  <span class="php-comment">//WPBPGen{{#unless custom_action}}</span>
 </span><span id="305" class="l">  <span class="php-comment">/**
 </span></span><span id="306" class="l"><span class="php-comment">   * NOTE:     Actions are points in the execution of a page or process
