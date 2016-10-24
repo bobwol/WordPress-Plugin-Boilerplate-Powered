@@ -118,7 +118,7 @@
 </span></span><span id="17" class="l"><span class="php-comment">   *
 </span></span><span id="18" class="l"><span class="php-comment">   * @var      object
 </span></span><span id="19" class="l"><span class="php-comment">   *
-</span></span><span id="20" class="l"><span class="php-comment">   * @since    1.0.0
+</span></span><span id="20" class="l"><span class="php-comment">   * @since    {{plugin_version}}
 </span></span><span id="21" class="l"><span class="php-comment">   */</span>
 </span><span id="22" class="l">  <span class="php-keyword1">protected</span> <span class="php-keyword1">static</span> <span class="php-var">$instance</span> = <span class="php-keyword1">null</span>;
 </span><span id="23" class="l">
@@ -127,7 +127,7 @@
 </span></span><span id="26" class="l"><span class="php-comment">   *
 </span></span><span id="27" class="l"><span class="php-comment">   * @var      string
 </span></span><span id="28" class="l"><span class="php-comment">   *
-</span></span><span id="29" class="l"><span class="php-comment">   * @since    1.0.0
+</span></span><span id="29" class="l"><span class="php-comment">   * @since    {{plugin_version}}
 </span></span><span id="30" class="l"><span class="php-comment">   */</span>
 </span><span id="31" class="l">  <span class="php-keyword1">protected</span> <span class="php-var">$admin_view_page</span> = <span class="php-keyword1">null</span>;
 </span><span id="32" class="l">
@@ -135,7 +135,7 @@
 </span></span><span id="34" class="l"><span class="php-comment">   * Initialize the plugin by loading admin scripts &amp; styles and adding a
 </span></span><span id="35" class="l"><span class="php-comment">   * settings page and menu.
 </span></span><span id="36" class="l"><span class="php-comment">   *
-</span></span><span id="37" class="l"><span class="php-comment">   * @since     1.0.0
+</span></span><span id="37" class="l"><span class="php-comment">   * @since     {{plugin_version}}
 </span></span><span id="38" class="l"><span class="php-comment">   */</span>
 </span><span id="39" class="l">  <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> __construct() {
 </span><span id="40" class="l">
@@ -283,7 +283,7 @@
 </span><span id="182" class="l">  <span class="php-comment">/**
 </span></span><span id="183" class="l"><span class="php-comment">   * Return an instance of this class.
 </span></span><span id="184" class="l"><span class="php-comment">   *
-</span></span><span id="185" class="l"><span class="php-comment">   * @since     1.0.0
+</span></span><span id="185" class="l"><span class="php-comment">   * @since     {{plugin_version}}
 </span></span><span id="186" class="l"><span class="php-comment">   *
 </span></span><span id="187" class="l"><span class="php-comment">   * @return    object    A single instance of this class.
 </span></span><span id="188" class="l"><span class="php-comment">   */</span>
@@ -310,7 +310,7 @@
 </span><span id="209" class="l">  <span class="php-comment">/**
 </span></span><span id="210" class="l"><span class="php-comment">   * Register and enqueue admin-specific style sheet.
 </span></span><span id="211" class="l"><span class="php-comment">   *
-</span></span><span id="212" class="l"><span class="php-comment">   * @since     1.0.0
+</span></span><span id="212" class="l"><span class="php-comment">   * @since     {{plugin_version}}
 </span></span><span id="213" class="l"><span class="php-comment">   *
 </span></span><span id="214" class="l"><span class="php-comment">   * @return    mixed    Return early if no settings page is registered.
 </span></span><span id="215" class="l"><span class="php-comment">   */</span>
@@ -328,7 +328,7 @@
 </span><span id="227" class="l">  <span class="php-comment">/**
 </span></span><span id="228" class="l"><span class="php-comment">   * Register and enqueue admin-specific JavaScript.
 </span></span><span id="229" class="l"><span class="php-comment">   *
-</span></span><span id="230" class="l"><span class="php-comment">   * @since     1.0.0
+</span></span><span id="230" class="l"><span class="php-comment">   * @since     {{plugin_version}}
 </span></span><span id="231" class="l"><span class="php-comment">   *
 </span></span><span id="232" class="l"><span class="php-comment">   * @return    mixed    Return early if no settings page is registered.
 </span></span><span id="233" class="l"><span class="php-comment">   */</span>
@@ -346,7 +346,7 @@
 </span><span id="245" class="l">  <span class="php-comment">/**
 </span></span><span id="246" class="l"><span class="php-comment">   * Register the administration menu for this plugin into the WordPress Dashboard menu.
 </span></span><span id="247" class="l"><span class="php-comment">   *
-</span></span><span id="248" class="l"><span class="php-comment">   * @since    1.0.0
+</span></span><span id="248" class="l"><span class="php-comment">   * @since    {{plugin_version}}
 </span></span><span id="249" class="l"><span class="php-comment">   * 
 </span></span><span id="250" class="l"><span class="php-comment">   * @return void
 </span></span><span id="251" class="l"><span class="php-comment">   */</span>
@@ -375,7 +375,7 @@
 </span><span id="274" class="l">  <span class="php-comment">/**
 </span></span><span id="275" class="l"><span class="php-comment">   * Render the settings page for this plugin.
 </span></span><span id="276" class="l"><span class="php-comment">   *
-</span></span><span id="277" class="l"><span class="php-comment">   * @since    1.0.0
+</span></span><span id="277" class="l"><span class="php-comment">   * @since    {{plugin_version}}
 </span></span><span id="278" class="l"><span class="php-comment">   */</span>
 </span><span id="279" class="l">  <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> display_plugin_admin_page() {
 </span><span id="280" class="l">    <span class="php-keyword1">include_once</span>( <span class="php-quote">'views/admin.php'</span> );
@@ -386,7 +386,7 @@
 </span><span id="285" class="l">  <span class="php-comment">/**
 </span></span><span id="286" class="l"><span class="php-comment">   * Add settings action link to the plugins page.
 </span></span><span id="287" class="l"><span class="php-comment">   *
-</span></span><span id="288" class="l"><span class="php-comment">   * @since    1.0.0
+</span></span><span id="288" class="l"><span class="php-comment">   * @since    {{plugin_version}}
 </span></span><span id="289" class="l"><span class="php-comment">   * @param array $links
 </span></span><span id="290" class="l"><span class="php-comment">   * @return array
 </span></span><span id="291" class="l"><span class="php-comment">   */</span>
@@ -410,7 +410,7 @@
 </span></span><span id="309" class="l"><span class="php-comment">   *           Actions:    http://codex.wordpress.org/Plugin_API#Actions
 </span></span><span id="310" class="l"><span class="php-comment">   *           Reference:  http://codex.wordpress.org/Plugin_API/Action_Reference
 </span></span><span id="311" class="l"><span class="php-comment">   *
-</span></span><span id="312" class="l"><span class="php-comment">   * @since    1.0.0
+</span></span><span id="312" class="l"><span class="php-comment">   * @since    {{plugin_version}}
 </span></span><span id="313" class="l"><span class="php-comment">   */</span>
 </span><span id="314" class="l">  <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> action_method_name() {
 </span><span id="315" class="l">    <span class="php-comment">// @TODO: Define your action hook callback here</span>
@@ -425,7 +425,7 @@
 </span></span><span id="324" class="l"><span class="php-comment">   *           Filters: http://codex.wordpress.org/Plugin_API#Filters
 </span></span><span id="325" class="l"><span class="php-comment">   *           Reference:  http://codex.wordpress.org/Plugin_API/Filter_Reference
 </span></span><span id="326" class="l"><span class="php-comment">   *
-</span></span><span id="327" class="l"><span class="php-comment">   * @since    1.0.0
+</span></span><span id="327" class="l"><span class="php-comment">   * @since    {{plugin_version}}
 </span></span><span id="328" class="l"><span class="php-comment">   */</span>
 </span><span id="329" class="l">  <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> filter_method_name() {
 </span><span id="330" class="l">    <span class="php-comment">// @TODO: Define your filter hook callback here</span>
