@@ -352,7 +352,7 @@
 </span></span><span id="251" class="l"><span class="php-comment">   */</span>
 </span><span id="252" class="l">  <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> load_content_demo( <span class="php-var">$original_template</span> ) {
 </span><span id="253" class="l">    <span class="php-keyword1">if</span> ( is_singular( <span class="php-quote">'demo'</span> ) &amp;&amp; in_the_loop() ) {
-</span><span id="254" class="l">    <span class="php-keyword1">return</span> pn_get_template_part( <span class="php-quote">'content'</span>, <span class="php-quote">'demo'</span>, <span class="php-keyword1">false</span> );
+</span><span id="254" class="l">    <span class="php-keyword1">return</span> wpbp_get_template_part( PN_TEXTDOMAIN, <span class="php-quote">'content'</span>, <span class="php-quote">'demo'</span>, <span class="php-keyword1">false</span> );
 </span><span id="255" class="l">    }
 </span><span id="256" class="l">    <span class="php-keyword1">return</span> <span class="php-var">$original_template</span>;
 </span><span id="257" class="l">  }
