@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Package Plugin\Name | Wordpress Plugin Boilerplate Powered</title>
+	<title>No namespace | Wordpress Plugin Boilerplate Powered</title>
 
 	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
 
@@ -16,25 +16,23 @@
 
 
 		<div id="groups">
-				<h3>Packages</h3>
+				<h3>Namespaces</h3>
 			<ul>
 				<li>
-					<a href="package-None.html">
+					<a href="namespace-_generated.html">
+						_generated					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Helper.html">
+						Helper					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-None.html">
 						None					</a>
 
 						</li>
-				<li class="active">
-					<a href="package-Plugin.html">
-						Plugin<span></span>
-					</a>
-
-						<ul>
-				<li class="active">
-					<a href="package-Plugin.Name.html">
-						Name					</a>
-
-						</li>
-							</ul></li>
 			</ul>
 		</div>
 
@@ -44,6 +42,8 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
+				<li><a href="class-AcceptanceTester.html">AcceptanceTester</a></li>
+				<li><a href="class-FunctionalTester.html">FunctionalTester</a></li>
 				<li><a href="class-Plugin_Name.html">Plugin_Name</a></li>
 				<li><a href="class-Plugin_Name_Admin.html">Plugin_Name_Admin</a></li>
 				<li><a href="class-Pn_ActDeact.html">Pn_ActDeact</a></li>
@@ -51,9 +51,14 @@
 				<li><a href="class-Pn_ContextualHelp.html">Pn_ContextualHelp</a></li>
 				<li><a href="class-Pn_Extras.html">Pn_Extras</a></li>
 				<li><a href="class-Pn_ImpExp.html">Pn_ImpExp</a></li>
+				<li><a href="class-Pn_My_Recent_Posts_Widget.html">Pn_My_Recent_Posts_Widget</a></li>
 				<li><a href="class-Pn_P2P.html">Pn_P2P</a></li>
 				<li><a href="class-Pn_Pointers.html">Pn_Pointers</a></li>
 				<li><a href="class-Pn_Uninstall.html">Pn_Uninstall</a></li>
+				<li><a href="class-PNTestAdmin.html">PNTestAdmin</a></li>
+				<li><a href="class-PNTestPublic.html">PNTestPublic</a></li>
+				<li><a href="class-UnitTester.html">UnitTester</a></li>
+				<li><a href="class-WpunitTester.html">WpunitTester</a></li>
 			</ul>
 
 
@@ -62,6 +67,7 @@
 
 			<h3>Functions</h3>
 			<ul>
+				<li><a href="function-pl_my_register_widget.html">pl_my_register_widget</a></li>
 				<li><a href="function-pn_fs.html">pn_fs</a></li>
 				<li><a href="function-pn_load_plugin_textdomain.html">pn_load_plugin_textdomain</a></li>
 			</ul>
@@ -85,7 +91,7 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li class="active">
-<span>Package</span>			</li>
+<span>Namespace</span>			</li>
 			<li>
 <span>Class</span>			</li>
 		</ul>
@@ -95,13 +101,21 @@
 		</ul>
 	</div>
 
-<div id="content" class="package">
-	<h1>Package <a href="package-Plugin.html">Plugin</a>\Name</h1>
+<div id="content" class="namespace">
+	<h1>No namespace</h1>
 
 
 
 <table class="summary" id="classes">
 <caption>Classes summary</caption>
+<tr>
+	<td class="name"><a href="class-AcceptanceTester.html">AcceptanceTester</a></td>
+	<td>Inherited Methods</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-FunctionalTester.html">FunctionalTester</a></td>
+	<td>Inherited Methods</td>
+</tr>
 <tr>
 	<td class="name"><a href="class-Plugin_Name.html">Plugin_Name</a></td>
 	<td><p>Plugin class. This class should ideally be used to work with the
@@ -133,6 +147,10 @@ administrative side of the WordPress site.</p></td>
 	<td>Provide Import and Export of the settings of the plugin</td>
 </tr>
 <tr>
+	<td class="name"><a href="class-Pn_My_Recent_Posts_Widget.html">Pn_My_Recent_Posts_Widget</a></td>
+	<td></td>
+</tr>
+<tr>
 	<td class="name"><a href="class-Pn_P2P.html">Pn_P2P</a></td>
 	<td>This class contain the Posts 2 Posts code</td>
 </tr>
@@ -144,6 +162,22 @@ administrative side of the WordPress site.</p></td>
 	<td class="name"><a href="class-Pn_Uninstall.html">Pn_Uninstall</a></td>
 	<td>This class contain the Uninstall code</td>
 </tr>
+<tr>
+	<td class="name"><a href="class-PNTestAdmin.html">PNTestAdmin</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-PNTestPublic.html">PNTestPublic</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-UnitTester.html">UnitTester</a></td>
+	<td>Inherited Methods</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-WpunitTester.html">WpunitTester</a></td>
+	<td>Inherited Methods</td>
+</tr>
 </table>
 
 
@@ -152,6 +186,10 @@ administrative side of the WordPress site.</p></td>
 
 <table class="summary" id="functions">
 <caption>Functions summary</caption>
+<tr>
+	<td class="name"><a href="function-pl_my_register_widget.html">pl_my_register_widget</a></td>
+	<td></td>
+</tr>
 <tr>
 	<td class="name"><a href="function-pn_fs.html">pn_fs</a></td>
 	<td>Create a helper function for easy SDK access.</td>
@@ -168,7 +206,7 @@ administrative side of the WordPress site.</p></td>
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?bc8d16d457e3e490dd3b69b96fcbb73e046448e5"></script>
-<script src="elementlist.js?70a6297c515ccdabfe238e64f4466488ab0b58db"></script>
+<script src="resources/combined.js?ce21125c834ce2807d90fdcaab0ddbed82730961"></script>
+<script src="elementlist.js?6d82e2c85f391a4cafa53e237cd1a39cf26e8cbf"></script>
 </body>
 </html>
