@@ -2,9 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="robots" content="noindex">
 
-	<title>File tests/_support/Helper/Functional.php | Wordpress Plugin Boilerplate Powered</title>
+	<title>Class Pn_WPCli | Wordpress Plugin Boilerplate Powered</title>
 
 	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
 
@@ -29,7 +28,7 @@
 						Helper					</a>
 
 						</li>
-				<li>
+				<li class="active">
 					<a href="namespace-None.html">
 						None					</a>
 
@@ -45,10 +44,6 @@
 			<ul>
 				<li><a href="class-AcceptanceTester.html">AcceptanceTester</a></li>
 				<li><a href="class-FunctionalTester.html">FunctionalTester</a></li>
-				<li><a href="class-Helper.Acceptance.html">Helper\Acceptance</a></li>
-				<li><a href="class-Helper.Functional.html">Helper\Functional</a></li>
-				<li><a href="class-Helper.Unit.html">Helper\Unit</a></li>
-				<li><a href="class-Helper.Wpunit.html">Helper\Wpunit</a></li>
 				<li><a href="class-Plugin_Name.html">Plugin_Name</a></li>
 				<li><a href="class-Plugin_Name_Admin.html">Plugin_Name_Admin</a></li>
 				<li><a href="class-Pn_ActDeact.html">Pn_ActDeact</a></li>
@@ -60,7 +55,7 @@
 				<li><a href="class-Pn_P2P.html">Pn_P2P</a></li>
 				<li><a href="class-Pn_Pointers.html">Pn_Pointers</a></li>
 				<li><a href="class-Pn_Uninstall.html">Pn_Uninstall</a></li>
-				<li><a href="class-Pn_WPCli.html">Pn_WPCli</a></li>
+				<li class="active"><a href="class-Pn_WPCli.html">Pn_WPCli</a></li>
 				<li><a href="class-PNTestAdmin.html">PNTestAdmin</a></li>
 				<li><a href="class-PNTestPublic.html">PNTestPublic</a></li>
 				<li><a href="class-UnitTester.html">UnitTester</a></li>
@@ -68,13 +63,6 @@
 			</ul>
 
 
-			<h3>Traits</h3>
-			<ul>
-				<li><a href="class-_generated.AcceptanceTesterActions.html">_generated\AcceptanceTesterActions</a></li>
-				<li><a href="class-_generated.FunctionalTesterActions.html">_generated\FunctionalTesterActions</a></li>
-				<li><a href="class-_generated.UnitTesterActions.html">_generated\UnitTesterActions</a></li>
-				<li><a href="class-_generated.WpunitTesterActions.html">_generated\WpunitTesterActions</a></li>
-			</ul>
 
 
 
@@ -104,8 +92,9 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-<span>Namespace</span>			</li>
-			<li>
+				<a href="namespace-None.html" title="Summary of None"><span>Namespace</span></a>
+			</li>
+			<li class="active">
 <span>Class</span>			</li>
 		</ul>
 		<ul>
@@ -114,25 +103,138 @@
 		</ul>
 	</div>
 
-<pre class="numbers"><code><span class="l"><a href="#1"> 1: </a></span><span class="l"><a href="#2"> 2: </a></span><span class="l"><a href="#3"> 3: </a></span><span class="l"><a href="#4"> 4: </a></span><span class="l"><a href="#5"> 5: </a></span><span class="l"><a href="#6"> 6: </a></span><span class="l"><a href="#7"> 7: </a></span><span class="l"><a href="#8"> 8: </a></span><span class="l"><a href="#9"> 9: </a></span><span class="l"><a href="#10">10: </a></span><span class="l"><a href="#11">11: </a></span></code></pre>
-<pre class="code"><code><span id="1" class="l"><span class="xlang">&lt;?php</span>
-</span><span id="2" class="l"><span class="php-keyword1">namespace</span> Helper;
-</span><span id="3" class="l">
-</span><span id="4" class="l"><span class="php-comment">// here you can define custom actions</span>
-</span><span id="5" class="l"><span class="php-comment">// all public methods declared in helper class will be available in $I</span>
-</span><span id="6" class="l">
-</span><span id="7" class="l"><span class="php-keyword1">class</span> Functional <span class="php-keyword1">extends</span> \Codeception\Module
-</span><span id="8" class="l">{
-</span><span id="9" class="l">
-</span><span id="10" class="l">}
-</span><span id="11" class="l"></span></code></pre>
+<div id="content" class="class">
+	<h1>Class Pn_WPCli</h1>
+
+
+	<div class="description">
+	<p>This class contain the WP CLI support</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> Plugin\Name<br>
+
+				<b>Copyright:</b>
+				{{author_copyright}}<br>
+				<b>License:</b>
+				<a href="{{author_license}}">{{author_license}}</a><br>
+				<b>Author:</b>
+				{{author_name}} &lt;{{author_email}}><br>
+				<b>Link:</b>
+				{{author_url}}<br>
+			<b>Located at</b> <a href="source-class-Pn_WPCli.html#3-44" title="Go to source code">includes/PN_WPCli.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Pn_WPCli.html#14-19" title="Go to source code">__construct</a>( )</code>
+
+		<div class="description short">
+			<p>Initialize the snippet</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Initialize the snippet</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="command_example" id="_command_example">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_command_example">#</a>
+		<code><a href="source-class-Pn_WPCli.html#21-42" title="Go to source code">command_example</a>( <span>array <var>$args</var></span> )</code>
+
+		<div class="description short">
+			<p>Example command
+API reference: https://wp-cli.org/docs/internal-api/</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Example command
+API reference: https://wp-cli.org/docs/internal-api/</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$args</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
 
 	<div id="footer">
 		Wordpress Plugin Boilerplate Powered API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?dbb5e1beab6852c5c079a04e11ff61ac6b499af9"></script>
-<script src="elementlist.js?b8479385155c3471faf20d9a667587b9d98a5cf4"></script>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
 </body>
 </html>
