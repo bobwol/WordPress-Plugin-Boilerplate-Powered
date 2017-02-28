@@ -152,7 +152,7 @@
 </span><span id="35" class="l"><span class="php-keyword2">define</span>( <span class="php-quote">'PN_NAME'</span>, <span class="php-quote">'{{plugin_name}}'</span> );
 </span><span id="36" class="l">
 </span><span id="37" class="l"><span class="php-keyword1">function</span> pn_load_plugin_textdomain() {
-</span><span id="38" class="l">    load_plugin_textdomain( PN_TEXTDOMAIN, <span class="php-keyword1">FALSE</span>, <span class="php-keyword2">basename</span>( plugin_dir_path( <span class="php-keyword2">dirname</span>( __FILE__ ) ) ) . <span class="php-quote">'/languages/'</span> );
+</span><span id="38" class="l">    load_textdomain( PN_TEXTDOMAIN, trailingslashit( WP_PLUGIN_DIR ) . PN_TEXTDOMAIN . <span class="php-quote">'/languages/'</span> . PN_TEXTDOMAIN . <span class="php-quote">'-'</span> . <span class="php-var">$locale</span> . <span class="php-quote">'.mo'</span> );
 </span><span id="39" class="l">}
 </span><span id="40" class="l">
 </span><span id="41" class="l">add_action( <span class="php-quote">'plugins_loaded'</span>, <span class="php-quote">'pn_load_plugin_textdomain'</span>, <span class="php-num">1</span> );
