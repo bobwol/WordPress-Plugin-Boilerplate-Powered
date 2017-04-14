@@ -80,9 +80,9 @@
 
 			<h3>Functions</h3>
 			<ul>
-				<li><a href="function-pl_my_register_widget.html">pl_my_register_widget</a></li>
 				<li><a href="function-pn_fs.html">pn_fs</a></li>
 				<li><a href="function-pn_load_plugin_textdomain.html">pn_load_plugin_textdomain</a></li>
+				<li><a href="function-pn_my_register_widget.html">pn_my_register_widget</a></li>
 			</ul>
 		</div>
 	</div>
@@ -318,13 +318,13 @@
 </span><span id="201" class="l">}
 </span><span id="202" class="l">
 </span><span id="203" class="l"><span class="php-comment">// Register widget</span>
-</span><span id="204" class="l"><span class="php-keyword1">if</span> ( !<span class="php-keyword2">function_exists</span>( <span class="php-quote">'pl_my_register_widget'</span> ) ) {
+</span><span id="204" class="l"><span class="php-keyword1">if</span> ( !<span class="php-keyword2">function_exists</span>( <span class="php-quote">'pn_my_register_widget'</span> ) ) {
 </span><span id="205" class="l">
-</span><span id="206" class="l">  <span class="php-keyword1">function</span> pl_my_register_widget() {
+</span><span id="206" class="l">  <span class="php-keyword1">function</span> pn_my_register_widget() {
 </span><span id="207" class="l">    register_widget( <span class="php-quote">'Pn_My_Recent_Posts_Widget'</span> );
 </span><span id="208" class="l">  }
 </span><span id="209" class="l">
-</span><span id="210" class="l">  add_action( <span class="php-quote">'widgets_init'</span>, <span class="php-quote">'pl_my_register_widget'</span>, <span class="php-num">1</span> );
+</span><span id="210" class="l">  add_action( <span class="php-quote">'widgets_init'</span>, <span class="php-quote">'pn_my_register_widget'</span>, <span class="php-num">1</span> );
 </span><span id="211" class="l">}
 </span><span id="212" class="l"></span></code></pre>
 
@@ -334,6 +334,6 @@
 </div>
 </div>
 <script src="resources/combined.js?dbb5e1beab6852c5c079a04e11ff61ac6b499af9"></script>
-<script src="elementlist.js?b8479385155c3471faf20d9a667587b9d98a5cf4"></script>
+<script src="elementlist.js?e0b2e569c95143fd69238de3a24c69b8970912ee"></script>
 </body>
 </html>
