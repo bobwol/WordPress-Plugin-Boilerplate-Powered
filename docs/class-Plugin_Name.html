@@ -47,6 +47,8 @@
 				<li class="active"><a href="class-Plugin_Name.html">Plugin_Name</a></li>
 				<li><a href="class-Plugin_Name_Admin.html">Plugin_Name_Admin</a></li>
 				<li><a href="class-Pn_ActDeact.html">Pn_ActDeact</a></li>
+				<li><a href="class-Pn_Ajax.html">Pn_Ajax</a></li>
+				<li><a href="class-Pn_Ajax_Admin.html">Pn_Ajax_Admin</a></li>
 				<li><a href="class-Pn_CMB.html">Pn_CMB</a></li>
 				<li><a href="class-Pn_ContextualHelp.html">Pn_ContextualHelp</a></li>
 				<li><a href="class-Pn_Extras.html">Pn_Extras</a></li>
@@ -108,8 +110,7 @@
 
 
 	<div class="description">
-	<p>Plugin class. This class should ideally be used to work with the
-public-facing side of the WordPress site.</p>
+	<p>This class should ideally be used to work with the public-facing side of the WordPress site.</p>
 	</div>
 
 
@@ -132,9 +133,7 @@ public-facing side of the WordPress site.</p>
 				<a href="{{author_license}}">{{author_license}}</a><br>
 				<b>Author:</b>
 				{{author_name}} &lt;{{author_email}}><br>
-				<b>Link:</b>
-				{{author_url}}<br>
-			<b>Located at</b> <a href="source-class-Plugin_Name.html#3-306" title="Go to source code">public/Plugin_Name.php</a>
+			<b>Located at</b> <a href="source-class-Plugin_Name.html#13-323" title="Go to source code">public/Plugin_Name.php</a>
 		<br>
 	</div>
 
@@ -154,7 +153,7 @@ public-facing side of the WordPress site.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_plugin_roles">#</a>
-		<code><a href="source-class-Plugin_Name.html#132-141" title="Go to source code">get_plugin_roles</a>( )</code>
+		<code><a href="source-class-Plugin_Name.html#131-140" title="Go to source code">get_plugin_roles</a>( )</code>
 
 		<div class="description short">
 			<p>Return the version</p>
@@ -192,7 +191,7 @@ public-facing side of the WordPress site.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_cpts">#</a>
-		<code><a href="source-class-Plugin_Name.html#145-154" title="Go to source code">get_cpts</a>( )</code>
+		<code><a href="source-class-Plugin_Name.html#144-153" title="Go to source code">get_cpts</a>( )</code>
 
 		<div class="description short">
 			<p>Return the cpts</p>
@@ -230,7 +229,7 @@ public-facing side of the WordPress site.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_instance">#</a>
-		<code><a href="source-class-Plugin_Name.html#158-172" title="Go to source code">get_instance</a>( )</code>
+		<code><a href="source-class-Plugin_Name.html#157-171" title="Go to source code">get_instance</a>( )</code>
 
 		<div class="description short">
 			<p>Return an instance of this class.</p>
@@ -268,7 +267,7 @@ public-facing side of the WordPress site.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_filter_search">#</a>
-		<code><a href="source-class-Plugin_Name.html#175-192" title="Go to source code">filter_search</a>( <span>object <var>$query</var></span> )</code>
+		<code><a href="source-class-Plugin_Name.html#174-192" title="Go to source code">filter_search</a>( <span>object <var>$query</var></span> )</code>
 
 		<div class="description short">
 			<p>Add support for custom CPT on the search box</p>
@@ -281,7 +280,7 @@ public-facing side of the WordPress site.</p>
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$query</var></dt>
-					<dd></dd>
+					<dd>Wp_Query.</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -311,7 +310,7 @@ public-facing side of the WordPress site.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_enqueue_styles">#</a>
-		<code><a href="source-class-Plugin_Name.html#196-204" title="Go to source code">enqueue_styles</a>( )</code>
+		<code><a href="source-class-Plugin_Name.html#196-205" title="Go to source code">enqueue_styles</a>( )</code>
 
 		<div class="description short">
 			<p>Register and enqueue public-facing style sheet.</p>
@@ -345,7 +344,7 @@ public-facing side of the WordPress site.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_enqueue_scripts">#</a>
-		<code><a href="source-class-Plugin_Name.html#207-215" title="Go to source code">enqueue_scripts</a>( )</code>
+		<code><a href="source-class-Plugin_Name.html#208-217" title="Go to source code">enqueue_scripts</a>( )</code>
 
 		<div class="description short">
 			<p>Register and enqueues public-facing JavaScript files.</p>
@@ -379,7 +378,7 @@ public-facing side of the WordPress site.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_enqueue_js_vars">#</a>
-		<code><a href="source-class-Plugin_Name.html#218-229" title="Go to source code">enqueue_js_vars</a>( )</code>
+		<code><a href="source-class-Plugin_Name.html#220-232" title="Go to source code">enqueue_js_vars</a>( )</code>
 
 		<div class="description short">
 			<p>Print the PHP var in the HTML of the frontend for access by JavaScript</p>
@@ -413,7 +412,7 @@ public-facing side of the WordPress site.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add_pn_class">#</a>
-		<code><a href="source-class-Plugin_Name.html#232-242" title="Go to source code">add_pn_class</a>( <span>array <var>$classes</var></span> )</code>
+		<code><a href="source-class-Plugin_Name.html#235-247" title="Go to source code">add_pn_class</a>( <span>array <var>$classes</var></span> )</code>
 
 		<div class="description short">
 			<p>Add class in the body on the frontend</p>
@@ -456,7 +455,7 @@ public-facing side of the WordPress site.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_load_content_demo">#</a>
-		<code><a href="source-class-Plugin_Name.html#245-257" title="Go to source code">load_content_demo</a>( <span>string <var>$original_template</var></span> )</code>
+		<code><a href="source-class-Plugin_Name.html#250-264" title="Go to source code">load_content_demo</a>( <span>string <var>$original_template</var></span> )</code>
 
 		<div class="description short">
 			<p>Example for override the template system on the frontend</p>
@@ -499,7 +498,7 @@ public-facing side of the WordPress site.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_action_method_name">#</a>
-		<code><a href="source-class-Plugin_Name.html#260-271" title="Go to source code">action_method_name</a>( )</code>
+		<code><a href="source-class-Plugin_Name.html#267-280" title="Go to source code">action_method_name</a>( )</code>
 
 		<div class="description short">
 			<p>NOTE:  Actions are points in the execution of a page or process
@@ -529,14 +528,14 @@ public-facing side of the WordPress site.</p>
 		<td class="attributes"><code>
 			 public 
 
-			
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_filter_method_name">#</a>
-		<code><a href="source-class-Plugin_Name.html#274-286" title="Go to source code">filter_method_name</a>( <span> <var>$param</var></span> )</code>
+		<code><a href="source-class-Plugin_Name.html#283-299" title="Go to source code">filter_method_name</a>( <span>array <var>$param</var></span> )</code>
 
 		<div class="description short">
 			<p>NOTE:  Filters are points of execution in which WordPress modifies data
@@ -549,7 +548,16 @@ public-facing side of the WordPress site.</p>
 <p>Filters: http://codex.wordpress.org/Plugin_API#Filters Reference:  http://codex.wordpress.org/Plugin_API/Filter_Reference</p>
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$param</var></dt>
+					<dd>The paramters.</dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
 
 
 				<h4>Since</h4>
@@ -566,14 +574,14 @@ public-facing side of the WordPress site.</p>
 		<td class="attributes"><code>
 			 public 
 
-			
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_shortcode_method_name">#</a>
-		<code><a href="source-class-Plugin_Name.html#289-303" title="Go to source code">shortcode_method_name</a>( <span> <var>$atts</var></span> )</code>
+		<code><a href="source-class-Plugin_Name.html#302-320" title="Go to source code">shortcode_method_name</a>( <span>array <var>$atts</var></span> )</code>
 
 		<div class="description short">
 			<p>NOTE:  Shortcode simple set of functions for creating macro codes for use
@@ -586,7 +594,16 @@ public-facing side of the WordPress site.</p>
 <p>Reference:  http://codex.wordpress.org/Shortcode_API</p>
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$atts</var></dt>
+					<dd>The paramters.</dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
 
 
 				<h4>Since</h4>
@@ -620,7 +637,7 @@ public-facing side of the WordPress site.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Plugin_Name.html#24-31" title="Go to source code"><var>$cpts</var></a>
+				<a href="source-class-Plugin_Name.html#25-30" title="Go to source code"><var>$cpts</var></a>
 
 			<div class="description short">
 				<p>Array of cpts of the plugin</p>
@@ -629,10 +646,6 @@ public-facing side of the WordPress site.</p>
 			<div class="description detailed hidden">
 				<p>Array of cpts of the plugin</p>
 
-					<h4>Since</h4>
-					<div class="list">
-							{{plugin_version}}<br>
-					</div>
 			</div>
 		</td>
 		<td class="value">
@@ -649,7 +662,7 @@ public-facing side of the WordPress site.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Plugin_Name.html#34-58" title="Go to source code"><var>$plugin_roles</var></a>
+				<a href="source-class-Plugin_Name.html#33-55" title="Go to source code"><var>$plugin_roles</var></a>
 
 			<div class="description short">
 				<p>Array of capabilities by roles</p>
@@ -658,10 +671,6 @@ public-facing side of the WordPress site.</p>
 			<div class="description detailed hidden">
 				<p>Array of capabilities by roles</p>
 
-					<h4>Since</h4>
-					<div class="list">
-							{{plugin_version}}<br>
-					</div>
 			</div>
 		</td>
 		<td class="value">

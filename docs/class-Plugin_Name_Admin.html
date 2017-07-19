@@ -47,6 +47,8 @@
 				<li><a href="class-Plugin_Name.html">Plugin_Name</a></li>
 				<li class="active"><a href="class-Plugin_Name_Admin.html">Plugin_Name_Admin</a></li>
 				<li><a href="class-Pn_ActDeact.html">Pn_ActDeact</a></li>
+				<li><a href="class-Pn_Ajax.html">Pn_Ajax</a></li>
+				<li><a href="class-Pn_Ajax_Admin.html">Pn_Ajax_Admin</a></li>
 				<li><a href="class-Pn_CMB.html">Pn_CMB</a></li>
 				<li><a href="class-Pn_ContextualHelp.html">Pn_ContextualHelp</a></li>
 				<li><a href="class-Pn_Extras.html">Pn_Extras</a></li>
@@ -108,8 +110,7 @@
 
 
 	<div class="description">
-	<p>Plugin class. This class should ideally be used to work with the
-administrative side of the WordPress site.</p>
+	<p>This class should ideally be used to work with the administrative side of the WordPress site.</p>
 	</div>
 
 
@@ -132,9 +133,7 @@ administrative side of the WordPress site.</p>
 				<a href="{{author_license}}">{{author_license}}</a><br>
 				<b>Author:</b>
 				{{author_name}} &lt;{{author_email}}><br>
-				<b>Link:</b>
-				{{author_url}}<br>
-			<b>Located at</b> <a href="source-class-Plugin_Name_Admin.html#3-353" title="Go to source code">admin/Plugin_Name_Admin.php</a>
+			<b>Located at</b> <a href="source-class-Plugin_Name_Admin.html#13-362" title="Go to source code">admin/Plugin_Name_Admin.php</a>
 		<br>
 	</div>
 
@@ -154,7 +153,7 @@ administrative side of the WordPress site.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get_instance">#</a>
-		<code><a href="source-class-Plugin_Name_Admin.html#191-215" title="Go to source code">get_instance</a>( )</code>
+		<code><a href="source-class-Plugin_Name_Admin.html#192-216" title="Go to source code">get_instance</a>( )</code>
 
 		<div class="description short">
 			<p>Return an instance of this class.</p>
@@ -192,7 +191,7 @@ administrative side of the WordPress site.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_enqueue_admin_styles">#</a>
-		<code><a href="source-class-Plugin_Name_Admin.html#218-239" title="Go to source code">enqueue_admin_styles</a>( )</code>
+		<code><a href="source-class-Plugin_Name_Admin.html#219-240" title="Go to source code">enqueue_admin_styles</a>( )</code>
 
 		<div class="description short">
 			<p>Register and enqueue admin-specific style sheet.</p>
@@ -230,7 +229,7 @@ administrative side of the WordPress site.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_enqueue_admin_scripts">#</a>
-		<code><a href="source-class-Plugin_Name_Admin.html#241-262" title="Go to source code">enqueue_admin_scripts</a>( )</code>
+		<code><a href="source-class-Plugin_Name_Admin.html#242-263" title="Go to source code">enqueue_admin_scripts</a>( )</code>
 
 		<div class="description short">
 			<p>Register and enqueue admin-specific JavaScript.</p>
@@ -268,7 +267,7 @@ administrative side of the WordPress site.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add_plugin_admin_menu">#</a>
-		<code><a href="source-class-Plugin_Name_Admin.html#264-291" title="Go to source code">add_plugin_admin_menu</a>( )</code>
+		<code><a href="source-class-Plugin_Name_Admin.html#265-292" title="Go to source code">add_plugin_admin_menu</a>( )</code>
 
 		<div class="description short">
 			<p>Register the administration menu for this plugin into the WordPress Dashboard menu.</p>
@@ -302,7 +301,7 @@ administrative side of the WordPress site.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_display_plugin_admin_page">#</a>
-		<code><a href="source-class-Plugin_Name_Admin.html#293-300" title="Go to source code">display_plugin_admin_page</a>( )</code>
+		<code><a href="source-class-Plugin_Name_Admin.html#294-303" title="Go to source code">display_plugin_admin_page</a>( )</code>
 
 		<div class="description short">
 			<p>Render the settings page for this plugin.</p>
@@ -336,7 +335,7 @@ administrative side of the WordPress site.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_add_action_links">#</a>
-		<code><a href="source-class-Plugin_Name_Admin.html#304-320" title="Go to source code">add_action_links</a>( <span>array <var>$links</var></span> )</code>
+		<code><a href="source-class-Plugin_Name_Admin.html#307-325" title="Go to source code">add_action_links</a>( <span>array <var>$links</var></span> )</code>
 
 		<div class="description short">
 			<p>Add settings action link to the plugins page.</p>
@@ -349,7 +348,7 @@ administrative side of the WordPress site.</p>
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$links</var></dt>
-					<dd></dd>
+					<dd>Array of links.</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -379,7 +378,7 @@ administrative side of the WordPress site.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_action_method_name">#</a>
-		<code><a href="source-class-Plugin_Name_Admin.html#324-335" title="Go to source code">action_method_name</a>( )</code>
+		<code><a href="source-class-Plugin_Name_Admin.html#329-342" title="Go to source code">action_method_name</a>( )</code>
 
 		<div class="description short">
 			<p>NOTE:     Actions are points in the execution of a page or process
@@ -416,7 +415,7 @@ administrative side of the WordPress site.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_filter_method_name">#</a>
-		<code><a href="source-class-Plugin_Name_Admin.html#339-350" title="Go to source code">filter_method_name</a>( )</code>
+		<code><a href="source-class-Plugin_Name_Admin.html#346-359" title="Go to source code">filter_method_name</a>( )</code>
 
 		<div class="description short">
 			<p>NOTE:     Filters are points of execution in which WordPress modifies data
@@ -463,7 +462,7 @@ administrative side of the WordPress site.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Plugin_Name_Admin.html#15-22" title="Go to source code"><var>$instance</var></a>
+				<a href="source-class-Plugin_Name_Admin.html#18-23" title="Go to source code"><var>$instance</var></a>
 
 			<div class="description short">
 				<p>Instance of this class.</p>
@@ -472,10 +471,6 @@ administrative side of the WordPress site.</p>
 			<div class="description detailed hidden">
 				<p>Instance of this class.</p>
 
-					<h4>Since</h4>
-					<div class="list">
-							{{plugin_version}}<br>
-					</div>
 			</div>
 		</td>
 		<td class="value">
@@ -492,7 +487,7 @@ administrative side of the WordPress site.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Plugin_Name_Admin.html#24-31" title="Go to source code"><var>$admin_view_page</var></a>
+				<a href="source-class-Plugin_Name_Admin.html#25-30" title="Go to source code"><var>$admin_view_page</var></a>
 
 			<div class="description short">
 				<p>Slug of the plugin screen.</p>
@@ -501,10 +496,6 @@ administrative side of the WordPress site.</p>
 			<div class="description detailed hidden">
 				<p>Slug of the plugin screen.</p>
 
-					<h4>Since</h4>
-					<div class="list">
-							{{plugin_version}}<br>
-					</div>
 			</div>
 		</td>
 		<td class="value">
