@@ -377,10 +377,10 @@
 </span><span id="258" class="l">        <span class="php-keyword1">if</span> ( <span class="php-var">$this</span>-&gt;admin_view_page === <span class="php-var">$screen</span>-&gt;id ) {
 </span><span id="259" class="l">            wp_enqueue_script( PN_TEXTDOMAIN . <span class="php-quote">'-settings-script'</span>, plugins_url( <span class="php-quote">'assets/js/settings.js'</span>, __FILE__ ), <span class="php-keyword1">array</span>( <span class="php-quote">'jquery'</span>, <span class="php-quote">'jquery-ui-tabs'</span> ), PN_VERSION );
 </span><span id="260" class="l">        }
-</span><span id="261" class="l">        <span class="php-comment">//{{/if}}</span>
+</span><span id="261" class="l">        <span class="php-comment">//{{/unless}}</span>
 </span><span id="262" class="l">        <span class="php-comment">//WPBPGen{{#unless admin-assets_admin-js}}</span>
 </span><span id="263" class="l">        wp_enqueue_script( PN_TEXTDOMAIN . <span class="php-quote">'-admin-script'</span>, plugins_url( <span class="php-quote">'assets/js/admin.js'</span>, __FILE__ ), <span class="php-keyword1">array</span>( <span class="php-quote">'jquery'</span> ), PN_VERSION );
-</span><span id="264" class="l">        <span class="php-comment">//{{/if}}</span>
+</span><span id="264" class="l">        <span class="php-comment">//{{/unless}}</span>
 </span><span id="265" class="l">    }
 </span><span id="266" class="l">
 </span><span id="267" class="l">    <span class="php-comment">/**
